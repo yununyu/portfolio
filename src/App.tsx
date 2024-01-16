@@ -1,5 +1,7 @@
+import {Contact} from './components'
+
 function App() {
-  return <p>start</p>
+  return <Contact />
 }
 
 export default App
