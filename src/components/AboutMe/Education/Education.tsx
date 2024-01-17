@@ -11,7 +11,7 @@ import {educations} from './educations'
 
 export const Education = () => {
   return (
-    <div className="grid grid-rows-1 gap-5 lg:px-6">
+    <div className="grid grid-rows-1 gap-2 lg:px-6">
       <SubTitle text="EDUCATION"></SubTitle>
       <div>
         {educations.map((education, index) => (

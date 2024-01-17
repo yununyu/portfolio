@@ -5,7 +5,7 @@ import Accordion from 'react-bootstrap/Accordion'
 
 export const SkillSet = () => {
   return (
-    <div className="grid grid-rows-1 gap-5 lg:px-6">
+    <div className="grid grid-rows-1 lg:px-6">
       <SubTitle text="SKILLS"></SubTitle>
       <div>
         {skills.map((skill, index) => (
