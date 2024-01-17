@@ -1,7 +1,11 @@
 import React, {FC} from 'react'
+import {ReactElement} from 'react'
 
 type TextProps = {
   text: string
+}
+type Props = {
+  children: ReactElement[]
 }
 
 export const SubTitle: FC<TextProps> = ({text}) => {
@@ -14,6 +18,16 @@ export const Subheading: FC<TextProps> = ({text}) => {
 
 export const Description: FC<TextProps> = ({text}) => {
   return <span className="my-6 font-serif text-xs text-gray-600">{text}</span>
+}
+
+export const Date: FC<TextProps> = ({text}) => {
+  return <span className="font-serif text-xs text-gray-500">{text}</span>
+}
+
+export const Ul = (props: Props) => {
+  const {children} = props
+
+  return <ul className="list-inside">{children}</ul>
 }
 
 export const commonStyles = {
