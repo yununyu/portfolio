@@ -10,20 +10,14 @@ export const Contact: FC<PropsWithChildren<ContactProps>> = props => {
       <div className="leading-7">
         <p className="break-all">
           <Subheading text="Email"></Subheading>
-          <a
-            href="essfree10@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs underline">
-            essfree10@gmail.com
-          </a>
+          <span className="text-xs underline">essfree10@gmail.com</span>
         </p>
         <p className="break-all">
           <Subheading text="PhoneNumber"></Subheading>
           <span className="text-xs underline">010-2305-3385</span>
         </p>
         <p className="break-all">
-          <span className="mr-2 font-bold text-[#8EB682] text-sm">GitHub</span>
+          <Subheading text="GitHub"></Subheading>
           <a
             href="https://github.com/yununyu"
             target="_blank"
