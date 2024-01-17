@@ -1,29 +1,31 @@
-import {FC, PropsWithChildren} from 'react'
-import {SubTitle, Ul, Description} from '../../../styles/index'
-import {commonStyles, Subheading} from '../../../styles/index'
 import React from 'react'
+import {SubTitle, Ul, Description, commonStyles, Subheading} from '../../../styles'
 import {skills} from './skills'
+import Accordion from 'react-bootstrap/Accordion'
 
-type SkillSetProps = {}
-
-export const SkillSet: FC<PropsWithChildren<SkillSetProps>> = props => {
+export const SkillSet = () => {
   return (
-    <div>
+    <div className="grid grid-rows-1 gap-5 lg:px-6">
       <SubTitle text="SKILLS"></SubTitle>
       <div>
         {skills.map((skill, index) => (
-          <div key={index} className={commonStyles.tableRow}>
+          <div key={index} className={`grid grid-cols-2 ${commonStyles.tableRow}`}>
             <div>
               <Subheading text={skill.name}></Subheading>
             </div>
-            <div className="col-span-4 mt-4 md:mt-0">
-              <Ul>
-                {skill.data.map((data, index) => (
-                  <li key={index}>
-                    <Description text={data}></Description>
-                  </li>
+            <div className="col-span-3 mt-4 md:mt-0">
+              <Accordion defaultActiveKey="null">
+                {skill.data.map((data, subIndex) => (
+                  <Accordion.Item key={subIndex} eventKey={subIndex.toString()}>
+                    <Accordion.Header>
+                      <Subheading text={data.title}></Subheading>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <Description text={data.content}></Description>
+                    </Accordion.Body>
+                  </Accordion.Item>
                 ))}
-              </Ul>
+              </Accordion>
             </div>
           </div>
         ))}
