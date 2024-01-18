@@ -1,21 +1,13 @@
 import React from 'react'
-import {SubTitle, Subheading} from '../../../styles/index'
+import {Title, Subheading} from '../../../styles/index'
+import {Cards} from '../../index'
 
 export const DoT = () => {
   return (
-    <div className="grid grid-rows-1 gap-4 mb-20 lg:px-6">
-      <SubTitle text="CONTACT"></SubTitle>
-      <div className="leading-7">
-        <p className="break-all">
-          <Subheading text="GitHub"></Subheading>
-          <a
-            href="https://github.com/yununyu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs underline">
-            https://github.com/yununyu
-          </a>
-        </p>
+    <div>
+      <Title text="PROJECTS"></Title>
+      <div className="grid grid-cols-1 m-10 lg:grid-cols-3">
+        <Cards content="여행 플래너 및 정보공유 게시판" />
       </div>
     </div>
   )
