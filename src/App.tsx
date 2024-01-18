@@ -1,7 +1,14 @@
-import {Contact} from './components'
+import {Contact, SkillSet, Education, DoT} from './components'
 
 function App() {
-  return <Contact />
+  return (
+    <div>
+      <Contact />
+      <SkillSet />
+      <Education />
+      <DoT />
+    </div>
+  )
 }
 
 export default App
