@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  SubTitle,
+  Title,
   Ul,
   Description,
   commonStyles,
@@ -12,7 +12,7 @@ import {educations} from './educations'
 export const Education = () => {
   return (
     <div className="grid grid-rows-1 gap-2 lg:px-6">
-      <SubTitle text="EDUCATION"></SubTitle>
+      <Title text="EDUCATION"></Title>
       <div>
         {educations.map((education, index) => (
           <div key={index} className={commonStyles.tableRow}>

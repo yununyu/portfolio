@@ -8,7 +8,7 @@ type Props = {
   children: ReactElement[]
 }
 
-export const SubTitle: FC<TextProps> = ({text}) => {
+export const Title: FC<TextProps> = ({text}) => {
   return <p className="text-2xl font-bold tracking-wide text-[#609966]">{text}</p>
 }
 
@@ -20,8 +20,27 @@ export const Description: FC<TextProps> = ({text}) => {
   return <span className="my-6 font-serif text-xs text-gray-600">{text}</span>
 }
 
+export const PS: FC<TextProps> = ({text}) => {
+  const index = text.indexOf('임윤서')
+  const index2 = text.indexOf('""')
+
+  return (
+    <p className="font-serif text-xs font-medium text-gray-600 hover:font-bold">
+      {index !== -1 ? ( // 이름 키워드를 포함한 인덱스만 substring 적용
+        <>
+          <span>{text.substring(0, index)}</span>
+          <span className="mr-1 text-base font-bold">임윤서</span>
+          <span>{text.substring(index + 3)}</span>
+        </>
+      ) : (
+        <span>{text}</span>
+      )}
+    </p>
+  )
+}
+
 export const Date: FC<TextProps> = ({text}) => {
-  return <span className="font-serif text-xs text-gray-500">{text}</span>
+  return <span className="ml-2 font-serif text-xs text-gray-500">{text}</span>
 }
 
 export const Ul = (props: Props) => {

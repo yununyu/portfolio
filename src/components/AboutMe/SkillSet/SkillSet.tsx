@@ -1,12 +1,12 @@
 import React from 'react'
-import {SubTitle, Ul, Description, commonStyles, Subheading} from '../../../styles'
+import {Title, Ul, Description, commonStyles, Subheading} from '../../../styles'
 import {skills} from './skills'
 import Accordion from 'react-bootstrap/Accordion'
 
 export const SkillSet = () => {
   return (
-    <div className="grid grid-rows-1 lg:px-6">
-      <SubTitle text="SKILLS"></SubTitle>
+    <div className="grid grid-rows-1 mt-8 lg:px-6">
+      <Title text="SKILLS"></Title>
       <div>
         {skills.map((skill, index) => (
           <div key={index} className={`grid grid-cols-2 ${commonStyles.tableRow}`}>

@@ -1,18 +1,18 @@
 import React from 'react'
-import {SubTitle, Subheading, Description, commonStyles} from '../../../styles/index'
+import {Title, Subheading, PS, commonStyles} from '../../../styles/index'
 import {PersonalStatement} from '../../index'
 
 export const Contact = () => {
   return (
     <div>
       <div className="flex flex-col items-start lg:flex-row lg:items-center lg:px-6">
-        <SubTitle text="CONTACT"></SubTitle>
+        <Title text="CONTACT"></Title>
       </div>
       <div className="grid grid-cols-2">
         <div className="mt-4 ml-20">
           {PersonalStatement.map((statement, index) => (
             <div key={index}>
-              <Description text={statement}></Description>
+              <PS text={statement}></PS>
             </div>
           ))}
         </div>
