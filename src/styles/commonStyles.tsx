@@ -25,7 +25,7 @@ export const PS: FC<TextProps> = ({text}) => {
   const index2 = text.indexOf('""')
 
   return (
-    <p className="font-serif text-xs font-medium text-gray-600 hover:font-bold">
+    <p className="font-serif text-sm font-medium text-gray-600 hover:font-bold">
       {index !== -1 ? ( // 이름 키워드를 포함한 인덱스만 substring 적용
         <>
           <span>{text.substring(0, index)}</span>
