@@ -20,11 +20,11 @@ export const Contact = () => {
         <div className="leading-7">
           <p className="break-all">
             <Subheading text="Email"></Subheading>
-            <span className="text-xs underline">essfree10@gmail.com</span>
+            <span className="text-sm underline">essfree10@gmail.com</span>
           </p>
           <p className="break-all">
             <Subheading text="PhoneNumber"></Subheading>
-            <span className="text-xs underline">010-2305-3385</span>
+            <span className="text-sm underline">010-2305-3385</span>
           </p>
           <p className="break-all">
             <Subheading text="GitHub"></Subheading>
@@ -32,7 +32,7 @@ export const Contact = () => {
               href="https://github.com/yununyu"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs underline">
+              className="text-sm underline">
               https://github.com/yununyu
             </a>
           </p>
@@ -42,7 +42,7 @@ export const Contact = () => {
               href="https://www.notion.so/0f4499262a7a43f78b0360f09ecbf7b3"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs underline">
+              className="text-sm underline">
               https://www.notion.so/0f4499262a7a43f78b0360f09ecbf7b3
             </a>
           </p>
