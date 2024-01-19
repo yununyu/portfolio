@@ -17,7 +17,7 @@ export const Subheading: FC<TextProps> = ({text}) => {
 }
 
 export const Description: FC<TextProps> = ({text}) => {
-  return <span className="my-6 font-serif text-xs text-gray-600">{text}</span>
+  return <span className="my-6 font-serif text-sm text-gray-600">{text}</span>
 }
 
 export const PS: FC<TextProps> = ({text}) => {
@@ -40,7 +40,7 @@ export const PS: FC<TextProps> = ({text}) => {
 }
 
 export const Date: FC<TextProps> = ({text}) => {
-  return <span className="ml-2 font-serif text-xs text-gray-500">{text}</span>
+  return <span className="ml-2 font-serif text-sm text-gray-500">{text}</span>
 }
 
 export const Ul = (props: Props) => {
