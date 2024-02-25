@@ -17,7 +17,7 @@ type CardProps = {
 }
 export const Cards: FC<CardProps> = ({ content }) => {
   function toGit() {
-    window.location.href = 'https://github.com/yununyu/DoT' //todo - gitRepo 만들어서 여기 업데이트 필요
+    window.location.href = 'https://github.com/yununyu/DoT'
   }
 
   function toSite() {

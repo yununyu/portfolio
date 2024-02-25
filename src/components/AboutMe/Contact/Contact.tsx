@@ -1,6 +1,6 @@
 import React from 'react'
-import {Title, Subheading, PS, commonStyles} from '../../../styles/index'
-import {PersonalStatement} from '../../index'
+import { Title, Subheading, PS, commonStyles } from '../../../styles/index'
+import { PersonalStatement } from '../../index'
 
 export const Contact = () => {
   return (
@@ -39,11 +39,11 @@ export const Contact = () => {
           <p className="break-all">
             <Subheading text="Notion"></Subheading>
             <a
-              href="https://www.notion.so/0f4499262a7a43f78b0360f09ecbf7b3"
+              href="https://www.notion.so/0f4499262a7a43f78b0360f09ecbf7b3?pvs=4"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm underline">
-              https://www.notion.so/0f4499262a7a43f78b0360f09ecbf7b3
+              https://www.notion.so/0f4499262a7a43f78b0360f09ecbf7b3?pvs=4
             </a>
           </p>
         </div>
